@@ -1,0 +1,108 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    font-family: "Oswald", sans-serif;
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    font-family: "Oswald", sans-serif;
+    list-style-type: none;
+    padding: 0;
+    background-color: #5985fc;
+    overflow: hidden;
+    margin: 0;
+}
+
+nav ul li {
+    float: right;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    color: #f7f6fa;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    background-color: #5985fc;
+    margin: 5px;
+    text-align: center;
+}
+
+form input,
+textarea,
+button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 50px;
+}
+
+.imagem-esquerda {
+    position: fixed;
+    left: 800px;
+    right: auto;
+    bottom: 0px;
+    height: 350px;
+    padding: auto;
+    max-width: 100%;
+}
