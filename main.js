@@ -12,7 +12,7 @@ form.addEventListener('submit', function(e) {
 
     const valorA = parseFloat(campoA.value);
     const valorB = parseFloat(campoB.value);
-    const mensagemSucesso = `O valor de Campo B: <b>${valorB}</b> é maior que o valor de Campo A: <b>${valorA}</b>.`;
+    const mensagemSucesso = `O Segundo Valor: <b>${valorB}</b> é maior que o primeiro: <b>${valorA}</b>.`;
 
     formEValido = validaCampos(valorA, valorB);
     if (formEValido) {
