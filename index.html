@@ -118,7 +118,7 @@
             </ul>
         </div>
     </section>
-    <section>
+    <section id="contato">
         <div class="container">
             <h2>Promoções</h2>
             <ul class="container-flex lista-veiculos">
@@ -185,6 +185,7 @@
             </ul>
         </div>
     </section>
+
     <section>
         <div class="container">
             <h2>Entre em contato</h2>
@@ -213,6 +214,7 @@
             </form>
         </div>
     </section>
+
     <footer>
         <div class="container container-flex">
             <p>
@@ -245,58 +247,7 @@
     <script src="./js/jquery.mask.min.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/messages_pt_BR.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#carousel-imagens').slick({
-                autoplay: true,
-                arrows: false,
-                dots: false,
-            });
-
-            $('.menu-hamburguer').click(function () {
-                $('nav').slideToggle();
-            })
-
-            $('#telefone').mask('(00) 00000-0000', {
-                placeholder: '(00)00000-0000'
-            })
-
-            $('form').validate({
-                rules: {
-                    nome: {
-                        required: true
-                    },
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    telefone: {
-                        required: true
-                    },
-                    mensagem: {
-                        required: true,
-                    },
-                    veiculoInterese: {
-                        required: false,
-                    }
-                },
-                messages: {
-                    nome: 'Por favor insira seu nome'
-                },
-                submitHandler: function (form) {
-                    console.log(form)
-                },
-                invalidHandler: function (evento, validador) {
-                    let camporIncorretos = validador.numberOfInvalids();
-                    if (camporIncorretos) {
-                        alert(`Existem ${camporIncorretos} Campos incorretos`)
-                    }
-
-                }
-            })
-        })
-    </script>
-
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
