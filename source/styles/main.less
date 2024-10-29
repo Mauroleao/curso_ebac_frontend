@@ -1,0 +1,109 @@
+@import "variaveis.less";
+@import "mixins.less";
+
+
+@breakPointMobile: ~"(max-width: 767px)";
+@breakPointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: @font-family;
+}
+
+body {
+background-color: @background-color;
+}
+
+li {
+list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+background-color: @primary-color;
+position: sticky;
+top: 0;
+left: 0;
+
+.container {
+    .flex-center();
+    padding: @padding-base 0;
+}
+}
+
+.menu {
+display: flex;
+
+li {
+    font-weight: bold;
+    margin-left: 24px;
+
+    a {
+    color: @text-color;
+    text-decoration: none;
+    }
+}
+}
+
+section {
+padding: 56px 0;
+
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); // Define o mínimo e o máximo para as colunas
+    gap: 16px; // Espaçamento entre os produtos
+
+    .product-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        border: 1px solid #eaeaea;
+        border-radius: 8px;
+        background-color: #fff;
+
+        img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4/3; // Define proporção das imagens para mantê-las alinhadas
+            border-radius: 8px;
+            object-fit: cover; // Garante que as imagens ocupem o espaço definido
+        }
+
+        h4 {
+            margin: 16px 0 8px;
+            text-align: center;
+        }
+
+        p {
+            flex-grow: 1;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .product-button {
+            display: block;
+            width: 100%;
+            background-color: @button-color;
+            color: @text-color;
+            text-align: center;
+            padding: 8px 0;
+            border-radius: 8px;
+            text-decoration: none;
+
+            &:hover {
+                background-color: @button-hover-color;
+            }
+        }
+    }
+}
+}
