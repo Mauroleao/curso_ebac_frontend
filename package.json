@@ -1,0 +1,17 @@
+{
+  "name": "boaspraticascss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass .\\bem\\main.scss ./bem/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "-": "^0.0.1",
+    "sass": "^1.80.6"
+  }
+}
