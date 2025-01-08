@@ -1,2 +1,13 @@
-node_modules/
-build/
+# Ignore o ambiente virtual do Python
+venv/
+.env/
+*.env
+
+# Ignore configurações do VS Code
+.vscode/
+
+# Ignore arquivos gerados pelo sistema
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
